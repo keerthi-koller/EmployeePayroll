@@ -57,6 +57,7 @@ section form{
     height: 680px;
     padding: 8px;
     position: relative;
+    margin: 20px auto;
 }
 
 form h1{
@@ -73,15 +74,50 @@ form .formdiv{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .titles{
     width: 200px;
-    height: auto;
     display: flex;
     flex-direction: column;
-    gap: 50px;
     margin-left: 75px;
+    font-size: 18px;
+}
+
+#n1{
+    position: absolute;
+    top: 10px;
+}
+
+#p1{
+    position: absolute;
+    top: 90px;
+}
+
+#g1{
+    position: absolute;
+    top: 155px;
+}
+
+#d1{
+    position: absolute;
+    top: 200px;
+}
+
+#s1{
+    position: absolute;
+    top: 260px;
+}
+
+#s2{
+    position: absolute;
+    top: 340px;
+}
+
+#n2{
+    position: absolute;
+    top: 400px;
 }
 
 .inputs{
