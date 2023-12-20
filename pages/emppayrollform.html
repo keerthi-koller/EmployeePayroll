@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Employee Payroll App</title>
     <link rel="stylesheet" href="emppayrollform.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="icon" href="../assets/logo.png">
 </head>
 <body>
     <header>
         <div class="header">
-            <img src="./assets/logo.png" alt="img">
+            <img src="../assets/logo.png" alt="img">
             <div class="heading">
                 <p class="emp">EMPLOYEE</p>
                 <p class="pay">PAYROLL</p>
@@ -19,8 +22,8 @@
 
     <section class="section">
         <form action="">
-            <h1>Employee Payroll Form</h1>
             <div class="newdiv">
+                <h1>Employee Payroll Form</h1>
                 <div class="inputs">
                     <div class="first1">
                         <label>Name</label>
@@ -33,16 +36,16 @@
                         <label>Profile Image</label>
                         <div class="radiobtns">
                             <div class="pro">
-                                <input type="radio" name="profile" id="img1"> <label for="img1"><img src="./assets/profile1.png" alt="img"></label>
+                                <input type="radio" name="profile" id="img1"> <label for="img1"><img src="../assets/profile1.png" alt="img"></label>
                             </div>
                             <div class="pro">
-                                <input type="radio" name="profile" id="img2"> <label for="img2"><img src="./assets/profile2.png" alt="img"></label>
+                                <input type="radio" name="profile" id="img2"> <label for="img2"><img src="../assets/profile2.png" alt="img"></label>
                             </div>
                             <div class="pro">
-                                <input type="radio" name="profile" id="img3"> <label for="img3"><img src="./assets/profile3.png" alt="img"></label>
+                                <input type="radio" name="profile" id="img3"> <label for="img3"><img src="../assets/profile3.png" alt="img"></label>
                             </div>
                             <div class="pro">
-                                <input type="radio" name="profile" id="img4"> <label for="img4"><img src="./assets/profile4.png" alt="img"></label>
+                                <input type="radio" name="profile" id="img4"> <label for="img4"><img src="../assets/profile4.png" alt="img"></label>
                             </div>
                         </div>
                     </div>
@@ -188,12 +191,15 @@
                         <button class="btn">Cancel</button>
                     </div>
                     <div class="rightbtns">
-                        <button class="btn">Submit</button>
+                        <button class="btn1">Submit</button>
                         <button class="btn">Reset</button>
                     </div>
                 </div>
             </div>
         </form>
     </section>
+
+    <script crossorigin="" type="module" src="../js/empDetail.js"></script>
+    <script crossorigin="" type="module" src="../js/EmployeeDetails.js"></script>
 </body>
 </html>
