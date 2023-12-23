@@ -21,14 +21,14 @@
     </header>
 
     <section class="section">
-        <form action="">
+        <div>
             <div class="newdiv">
                 <h1>Employee Payroll Form</h1>
                 <div class="inputs">
                     <div class="first1">
                         <label>Name</label>
                         <div class="nameinp">
-                            <input type="text" name="names" class="name">
+                            <input type="text" name="names" class="name" id="nameid" required>
                         </div>
                     </div>
     
@@ -36,16 +36,16 @@
                         <label>Profile Image</label>
                         <div class="radiobtns">
                             <div class="pro">
-                                <input type="radio" name="profile" id="img1"> <label for="img1"><img src="../assets/profile1.png" alt="img"></label>
+                                <input type="radio" name="profile" id="img1" value="../assets/profile1.png"> <label for="img1"><img src="../assets/profile1.png" alt="img"></label>
                             </div>
                             <div class="pro">
-                                <input type="radio" name="profile" id="img2"> <label for="img2"><img src="../assets/profile2.png" alt="img"></label>
+                                <input type="radio" name="profile" id="img2" value="../assets/profile2.png"> <label for="img2"><img src="../assets/profile2.png" alt="img"></label>
                             </div>
                             <div class="pro">
-                                <input type="radio" name="profile" id="img3"> <label for="img3"><img src="../assets/profile3.png" alt="img"></label>
+                                <input type="radio" name="profile" id="img3" value="../assets/profile3.png"> <label for="img3"><img src="../assets/profile3.png" alt="img"></label>
                             </div>
                             <div class="pro">
-                                <input type="radio" name="profile" id="img4"> <label for="img4"><img src="../assets/profile4.png" alt="img"></label>
+                                <input type="radio" name="profile" id="img4" value="../assets/profile4.png"> <label for="img4"><img src="../assets/profile4.png" alt="img"></label>
                             </div>
                         </div>
                     </div>
@@ -86,14 +86,14 @@
                     <div class="fifth5">
                         <label>Salary</label>
                         <div class="salaryinp">
-                            <input type="range" name="salary" class="sal" max="10" min="4">
+                            <input type="range" name="salary" class="sal" min="4" max="10" step="1" id="salaryId">
                         </div>
                     </div>
     
                     <div class="sixth6">
                         <label>Start Date</label>
                         <div class="startdatesinp">
-                            <select name="date" class="dates">
+                            <select name="date" class="dates" id="dateId">
                                 <option>Day</option>
                                 <option value="01">01</option>
                                 <option value="02">02</option>
@@ -128,7 +128,7 @@
                                 <option value="31">31</option>            
                             </select>
     
-                            <select name="date" class="dates">
+                            <select name="month" class="dates" id="monthId">
                                 <option>Month</option>
                                 <option value="01">01</option>
                                 <option value="02">02</option>
@@ -144,7 +144,7 @@
                                 <option value="12">12</option>            
                             </select>
     
-                            <select name="date" class="dates">
+                            <select name="year" class="dates" id="yearId">
                                 <option>Year</option>
                                 <option value="2023">2023</option>
                                 <option value="2022">2022</option>
@@ -181,25 +181,26 @@
                     <div class="seventh7">
                         <label>Notes</label>
                         <div class="notesinp">
-                            <input type="text" name="notes" class="note">
+                            <input type="text" name="notes" class="note" id="noteid">
                         </div>
                     </div>
                     
                 </div>
                 <div class="bottombtns">
                     <div class="leftbtns">
-                        <button class="btn">Cancel</button>
+                        <button class="btn" id="cancelBtn">Cancel</button>
                     </div>
                     <div class="rightbtns">
-                        <button class="btn1">Submit</button>
-                        <button class="btn">Reset</button>
+                        <button class="btn1" id="submit">Submit</button>
+                        <button class="btn" id="resetBtn">Reset</button>
                     </div>
                 </div>
             </div>
-        </form>
+        </div>
     </section>
 
-    <script crossorigin="" type="module" src="../js/empDetail.js"></script>
-    <script crossorigin="" type="module" src="../js/EmployeeDetails.js"></script>
+    <!-- <script type="module" src="../js/empDetail.js"></script>
+    <script type="module" src="../js/EmployeeDetails.js"></script> -->
+    <script type="module" src="../js/employeeevnt.js"></script>
 </body>
 </html>
