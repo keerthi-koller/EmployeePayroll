@@ -42,7 +42,7 @@ function submitForm(){
     const date = document.getElementById("dateId").value;
     const month = document.getElementById("monthId").value;
     const year = document.getElementById("yearId").value;
-    const startDate = `${date}/${month}/${year}`;
+    const startDate = `${date} ${month} ${year}`;
     const notes = document.getElementById("noteid").value;
     
     let empDetails = new EmployeeDetails ();
